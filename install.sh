@@ -18,7 +18,7 @@ sudo apt-get install pufferpanel
 sudo pufferpanel user add
 sudo systemctl enable --now pufferpanel
 apt install -y nginx
-cd /etc/nginx/sites-available
+cd /etc/nginx/sites-enabled
 rm default
 wget -N https://raw.githubusercontent.com/trisout78/woiden-pufferpanel-install/main/pufferpanel.conf
 systemctl restart nginx
