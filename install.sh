@@ -3,6 +3,7 @@ rm ct-preset.list
 apt update && apt -y upgrade
 apt --fix-broken install
 apt -y upgrade
+cd
 wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh 4
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
